@@ -35,7 +35,7 @@ function git_aliases() {
     alias gb='git blame '
     alias gr='git checkout -b '
     alias gl='git log -p'
-
+    alias gshow='git remote show origin'
     alias git-clean='git reset --hard HEAD && git clean -d -f'
 
     function gbf() {
@@ -43,6 +43,12 @@ function git_aliases() {
     }
 }
 
+function prompt {
+    PS1="\!-\u@\h:\w/ $ "
+    PS2="$ "
+}
+
+prompt
 utils_aliases
 dev_aliases
 git_aliases
