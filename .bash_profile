@@ -4,6 +4,12 @@ function utils_aliases() {
     alias cdd='cd ~/dotfiles'
     alias tf='tail -f'
     alias hg='history | grep'
+    
+    # Show human friendly numbers and colors
+    alias df='df -h'
+    alias ll='ls -alGh'
+    alias ls='ls -Gh'
+    alias du='du -h -d 2'
     function cdl() {
         cd $* && /bin/ls -lA
     }
@@ -36,6 +42,8 @@ function git_aliases() {
     alias gr='git checkout -b '
     alias gl='git log -p'
     alias gshow='git remote show origin'
+    alias gbr='git branch'
+    alias gstash='git stash'
     alias git-clean='git reset --hard HEAD && git clean -d -f'
 
     function gbf() {
