@@ -31,8 +31,8 @@ function git_aliases() {
     alias gd='git diff | less'
     alias gdc='git diff --cached | less'
     alias gc='git commit -m '
-    alias gp='git pull '
-    alias gh='git push '
+    alias gpl='git pull '
+    alias gp='git push '
     alias gk='git checkout '
     alias ga='git add '
     alias gaa='git add -A '
@@ -43,7 +43,7 @@ function git_aliases() {
     alias gl='git log -p'
     alias gshow='git remote show origin'
     alias gbr='git branch'
-    alias gstash='git stash'
+    alias gss='git stash'
     alias git-clean='git reset --hard HEAD && git clean -d -f'
 
     function gbf() {
