@@ -1,7 +1,4 @@
 function utils_aliases() {
-    alias lash='ls -lAsh '
-    alias e='emacs -nw'
-    alias cdd='cd ~/dotfiles'
     alias tf='tail -f'
     alias hg='history | grep'
     
@@ -13,17 +10,6 @@ function utils_aliases() {
     function cdl() {
         cd $* && /bin/ls -lA
     }
-}
-
-function dev_aliases() {
-    alias pygrep="find . -name '*.py' -type f -print0 | xargs -0 grep "
-    alias pygrepi="find . -name '*.py' -type f -print0 | xargs -0 grep -i "
-    alias shgrep="find . -name '*.sh' -type f -print0 | xargs -0 grep "
-    alias shgrepi="find . -name '*.sh' -type f -print0 | xargs -0 grep -i "
-    alias fgrep="find . -type f | grep -v '\.git' | grep -v '\.tmbundle' \
-        | xargs file | grep -v ELF | cut -d: -f1 | xargs grep "
-    alias fgrepi="find . -type f | grep -v '\.git' | grep -v '\.tmbundle' \
-        | xargs file | grep -v ELF | cut -d: -f1 | xargs grep -i "
 }
 
 function git_aliases() {
@@ -51,12 +37,5 @@ function git_aliases() {
     }
 }
 
-function prompt {
-    PS1="\!-\u@\h:\w/ $ "
-    PS2="$ "
-}
-
-prompt
 utils_aliases
-dev_aliases
 git_aliases
