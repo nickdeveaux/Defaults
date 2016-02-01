@@ -1,6 +1,8 @@
 function utils_aliases() {
     alias tf='tail -f'
     alias hg='history | grep'
+    alias pss='ps aux | grep'
+    alias vms='vmstat -S M -n 1 3000'
     
     # Show human friendly numbers and colors
     alias df='df -h'
