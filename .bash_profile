@@ -10,6 +10,7 @@ function utils_aliases() {
     alias ls='ls -Gh'
     alias du='du -h -d 2'
     alias pygrep="find . -name '*.py' -type f -print0 | xargs -0 grep"
+    alias shgrep="find . -name '*.sh' -type f -print0 | xargs -0 grep"
     function cdl() {
         cd $* && /bin/ls -lA
     }
