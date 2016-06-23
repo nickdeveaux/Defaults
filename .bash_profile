@@ -1,3 +1,11 @@
+function history_settings(){
+    HISTTIMEFORMAT='%F %T '
+    HISTFILESIZE=1000000
+    HISTSIZE=1000000
+    HISTCONTROL=ignoredups
+    HISTIGNORE=?:??    
+}
+
 function utils_aliases() {
     alias tf='tail -f'
     alias hg='history | grep'
@@ -43,3 +51,4 @@ function git_aliases() {
 
 utils_aliases
 git_aliases
+history_settings
