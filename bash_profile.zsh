@@ -90,6 +90,9 @@ export KEYTIMEOUT=1
 zle -N zle-line-init
 zle -N zle-keymap-select
 
+# add packages installed by snap, like slack and evernote, to the zsh session
+emulate sh -c 'source /etc/profile.d/apps-bin-path.sh'
+
 # added by Anaconda3 installer
 export PATH="/home/nick/anaconda3/bin:$PATH"
 
