@@ -58,9 +58,13 @@ function git_aliases() {
 }
 
 # This function will modify both the right prompt and the left prompt
-# The left prompt has its yellow section replaced with white
+# The left prompt has its darker colors replaced with lighter ones in COMMAND mode
 function zle-line-init zle-keymap-select {
     CPS1="$(echo $PS1 | sed "s/yellow/white/g" )" 
+    CPS1="$(echo $CPS1 | sed "s/F{135}/F{219}/g" )" 
+    CPS1="$(echo $CPS1 | sed "s/F{166}/F{231}/g" )" 
+    CPS1="$(echo $CPS1 | sed "s/F{118}/F{158}/g" )" 
+
     if [ -z "${ORIGINAL_PS1}" ]; then
         ORIGINAL_PS1=$PS1
     fi
